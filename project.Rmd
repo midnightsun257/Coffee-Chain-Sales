@@ -1,0 +1,38 @@
+---
+title: "project"
+author: "Ankita Mishra"
+date: "2024-10-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# libraries import
+library(ggplot2)
+library(GGally)
+library(corrplot)
+library(readr)
+library(leaps)
+library(car)
+library(MASS)
+library(psych)
+library(dplyr)
+library(glmnet)
+library(pracma)
+```
+```{r}
+coffee = read.csv('Coffee_Chain_Sales .csv')
+head(coffee)
+names(coffee)[sapply(coffee, is.integer)]
+names(coffee)[sapply(coffee, is.character)]
+```
+```{r}
+# check for missing data
+sum(is.na(coffee))
+```
+
+
+

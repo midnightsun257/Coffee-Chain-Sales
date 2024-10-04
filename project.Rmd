@@ -33,6 +33,19 @@ names(coffee)[sapply(coffee, is.character)]
 # check for missing data
 sum(is.na(coffee))
 ```
+```{r}
+summary(coffee)
+```
+```{r}
+unique(coffee$Market_size)
+unique(coffee$Market)
+unique(coffee$Product_line)
+unique(coffee$Product_type)
+unique(coffee$Product)
+unique(coffee$State)
+unique(coffee$Type)
+```
+
 
 
 

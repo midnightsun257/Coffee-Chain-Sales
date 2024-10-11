@@ -1,4 +1,10 @@
-# Load necessary libraries
+# Coffee Chain Sales Data Analysis - Exploratory Data Analysis (EDA)
+# This script provides an initial exploration of the Coffee Chain Sales dataset, 
+# focusing on summary statistics, missing data, correlations, outlier detection, 
+# and the distributions of numeric variables. These steps help understand the data's 
+# characteristics, identify potential issues, and guide subsequent analysis and 
+# modeling efforts.
+
 install.packages("ggplot2")
 install.packages("dplyr")
 install.packages("corrplot")
@@ -7,15 +13,17 @@ library(ggplot2)
 library(dplyr)
 library(corrplot)
 
-# Load the dataset
-dataset <- read.csv('/Users/cdmstudent/Desktop/Coffee_Chain_Sales.csv')
+# Loading the dataset
+dataset <- read.csv('Coffee_Chain_Sales.csv')
 
-# Summary statistics
+# Summary 
 summary(dataset)
 
 # Check for missing values
 missing_data <- colSums(is.na(dataset))
 print(missing_data)
+
+#missing values found : 0, fixed by another team member
 
 # Correlation analysis (numeric columns only)
 numeric_columns <- dataset %>% select_if(is.numeric)

@@ -1,5 +1,5 @@
 
-# Coffee Chain Sales Data Analysis Project
+# Coffee Chain Sales Data Analysis Team Project
 
 **Course**: DSC 424 - Advanced Data Analysis  
 **Project Title**: Comprehensive Analysis of Coffee Chain Sales Dataset  

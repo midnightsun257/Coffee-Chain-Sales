@@ -1,3 +1,14 @@
+#SCRIPT 2
+
+
+# Coffee Chain Sales Data Analysis - Data Transformations
+# This script performs a series of transformations on the "Profit" variable 
+# in the Coffee Chain Sales dataset to normalize its distribution and reduce skewness. 
+# Transformations applied include Log, Square Root, Box-Cox, and Yeo-Johnson. 
+# The code also calculates skewness before and after transformations, allowing for 
+# comparison of distribution improvements.
+
+
 # Install necessary packages if not already installed
 if (!require(MASS)) install.packages("MASS")
 if (!require(e1071)) install.packages("e1071")
@@ -11,6 +22,7 @@ library(caret)
 # Checking the skewness of the "Profit" variable
 original_skewness <- skewness(dataset$Profit, na.rm = TRUE)
 print(paste("Original Skewness of Profit:", original_skewness))
+
 
 # Replace negative or NA values in Profit with a small positive value
 dataset$Profit[is.na(dataset$Profit) | dataset$Profit <= 0] <- 1e-5

@@ -16,7 +16,7 @@ This project is part of the final requirements for the course **DSC 424: Advance
 ### Dataset:
 The dataset we are using contains sales data from a coffee chain, with information such as product categories, regional sales, profits, and various time periods. It contains a diverse mix of both categorical and continuous variables, making it suitable for the multivariate analyses covered in this course.
 
-- **Dataset file**: `Coffee_Chain_Sales.csv`
+- **Dataset file**: [`Coffee_Chain_Sales.csv`](https://github.com/MK-Github03/Coffee-Chain-Sales/blob/main/Coffee_Chain_Sales%20.csv)
 - **Total Variables**: Over 20 variables, including metric, ordinal, and categorical types.
 - **Observations**: 400+ entries, fulfilling the project requirements.
 

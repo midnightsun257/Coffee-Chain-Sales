@@ -1,0 +1,32 @@
+#Create dataset with numerical variables
+numericalcoffee <- Coffee_Chain_Sales_[, c('Cogs', 'DifferenceBetweenActualandTargetProfit', 'Inventory Margin', 'Margin', 
+                                           'Marketing', 'Sales', 'Target_cogs', 'Target_margin', 
+                                           'Target_profit', 'Target_sales', 'Total_expenses')]
+
+# Rename the first column (helps with corrplot matrix visualization)
+colnames(numericalcoffee)[2] <- "DBATP"
+corrplot(cor(numericalcoffee))
+
+#Principal Component Analysis
+p1 = principal(numericalcoffee, rotate="varimax", nfactors=11)
+summary(p1)
+print(p1$loadings, cutoff=.4, sort=T)
+
+plot(p1)
+abline(1, 0, col="red")
+screeplot(p1, type = "lines", main = "Scree Plot")
+
+
+#Parallel Analysis
+fa.parallel(numericalcoffee)
+round(p1$rotation, 2)
+
+#PCA with 2 factors
+p2 = principal(numericalcoffee, rotate="varimax", nfactors=2)
+summary(p2)
+print(p2$loadings, cutoff=.4, sort=T)
+
+
+# Factor Analysis with 2 factors
+fa_result <- fa(numericalcoffee, nfactors = 2, rotate = "varimax", fm = "minres")
+print(fa_result)

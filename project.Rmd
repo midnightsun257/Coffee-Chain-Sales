@@ -47,6 +47,7 @@ unique(coffee$Type)
 ```
 
 
+# EDA and log transformations done by [Manoj](https://github.com/MK-Github03)
 # Coffee Chain Sales Data Analysis - Exploratory Data Analysis (EDA)
 # This script provides an initial exploration of the Coffee Chain Sales dataset, 
 # focusing on summary statistics, missing data, correlations, outlier detection, 

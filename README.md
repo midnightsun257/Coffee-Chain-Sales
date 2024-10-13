@@ -5,9 +5,9 @@
 **Project Title**: Comprehensive Analysis of Coffee Chain Sales Dataset  
 
 ## Team Members:
-1. MK - GitHub: [MK-github03](https://github.com/MK-github03) 
+1. Manoj kumar Ashok - GitHub: [MK-github03](https://github.com/MK-github03) 
 2. Vishal - GitHub: [Vishal-412](https://github.com/Vishal-412)
-3. Midnightsun - GitHub: [midnightsun257](https://github.com/midnightsun257)
+3. Ankita Mishra - GitHub: [midnightsun257](https://github.com/midnightsun257)
 4. Jason Nowak - GitHub: [jasonnowak](https://github.com/jasonnowak)
 
 ## Project Overview:
